@@ -1,1 +1,1 @@
-<?php echo "hello docker";
+<?php phpinfo();
