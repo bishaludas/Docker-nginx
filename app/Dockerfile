@@ -31,4 +31,7 @@ ADD default /etc/nginx/sites-available/default
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 ADD php-fpm.conf /etc/php/7.4/fpm/php-fpm.conf
 
-CMD ["supervisord"]
+ADD start-container.sh /usr/bin/start-container
+RUN chmod +x /usr/bin/start-container
+
+ENTRYPOINT ["start-container"]
