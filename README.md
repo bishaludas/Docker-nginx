@@ -13,7 +13,7 @@ Setup a docker container with nginx and php-fpm
 	docker build -t namespace/appname:tagname -f ./DockerFile .
 	```Build a container from docker file, tagname and path to Dockerfile```
 - docker exec -it <image id><command : bash>
-
+- Remove stopped containers : `docker rm $(docker ps -a -q)`
 
 ## Network command
 - docker network -- help, help page
